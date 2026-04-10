@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "MtconnectTranspiler.Sinks.Cpp.Example": {
+      "commandName": "Project",
+      "commandLineArgs":
+        "\"$(SolutionDir)cpp_output\" \"/home/desky/pprojects/mtconnect_sysml_model/MTConnectSysMLModel.xml\""
+    }
+  }
+}

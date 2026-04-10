@@ -1,0 +1,6 @@
+{{~ if $1.normative_version != "" ~}}
+ * @since MTConnect Version {{ $1.normative_version }}
+{{~ end ~}}
+{{~ if $1.deprecated_version != "" ~}}
+ * @deprecated Since MTConnect Version {{ $1.deprecated_version }}
+{{~ end ~}}
