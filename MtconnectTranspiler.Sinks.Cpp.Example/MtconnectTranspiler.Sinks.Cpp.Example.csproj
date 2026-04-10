@@ -45,6 +45,9 @@
     <Content Include="Templates\UmlCommentsSummaryContent.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Templates\Cpp.Example.scriban">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

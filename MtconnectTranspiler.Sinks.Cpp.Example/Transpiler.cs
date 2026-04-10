@@ -166,6 +166,11 @@ namespace MtconnectTranspiler.Sinks.Cpp.Example
             _logger?.LogInformation("Writing CMakeLists.txt...");
             var projectFile = new CppProject(model, model.Model);
             _generator.ProcessTemplate(projectFile, _generator.OutputPath, true);
+
+            _logger?.LogInformation("Writing example agent client...");
+            var examplePath = Path.Combine(_generator.OutputPath, "examples");
+            Directory.CreateDirectory(examplePath);
+            _generator.ProcessTemplate(new CppExample(model, model.Model), examplePath, true);
         }
 
         private IEnumerable<CppNamespace> getNamespaces(XmiDocument model, UmlPackage package, string namespacePrefix = "mtconnect")
